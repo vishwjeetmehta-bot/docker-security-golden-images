@@ -19,3 +19,4 @@ cosign sign --yes "$IMAGE_TAG"
 echo "==> Attaching SBOM attestation..."
 cosign attest --yes --predicate sbom.spdx.json --type spdx "$IMAGE_TAG"
 echo "✅ Image signed and attested successfully!"
+

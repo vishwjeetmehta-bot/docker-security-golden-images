@@ -16,3 +16,4 @@ jobs:
       - name: Build Python Golden Image
         run: |
           docker build -t golden-python:latest images/python/ -f images/python/Dockerfile || true
+
